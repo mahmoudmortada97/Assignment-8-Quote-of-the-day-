@@ -29,7 +29,7 @@ function quoteGenerator() {
       author: `― C.S. Lewis, The Four Loves`,
     },
   ];
-  quoterandomnumber = getRandomInt(7);
+  quoterandomnumber = getRandomInt(Quote.length);
   document.getElementById("quote-section").innerHTML = ` 
   <p id="quote">${Quote[quoterandomnumber].quote}</p>
   <p id="quote-author">${Quote[quoterandomnumber].author}</p>`;
